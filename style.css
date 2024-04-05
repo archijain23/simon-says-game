@@ -1,0 +1,59 @@
+
+.bgimage{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image.jpeg");
+    background-size: cover;
+    isolation: isolate;
+     margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  
+  
+   text-align: center;
+   position: relative; 
+}
+.bgimage::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: gray;
+    opacity: 0.9;
+    
+}
+.btn{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 10px solid black;
+    margin: 1.8rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: #d95980;
+    opacity:0.6;
+  
+}
+
+.yellow{
+    background-color: #f99b45;
+    opacity:0.6;
+}
+.green{
+    background-color: #63aac0;
+    opacity:0.6;
+}
+.purple{
+    background-color: #819ff9;
+    opacity:0.6;
+}
+
+.flash{
+    opacity: 1;
+}
